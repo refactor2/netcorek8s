@@ -14,6 +14,7 @@ namespace netcorek8s.Controllers
         [HttpGet]
         public ActionResult<string> Get()
         {
+            return Content(System.Environment.MachineName);
             var psi = new System.Diagnostics.ProcessStartInfo("hostname");
             psi.RedirectStandardOutput = true;
             using (var process = System.Diagnostics.Process.Start(psi))
