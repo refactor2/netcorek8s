@@ -41,3 +41,4 @@ _ReSharper*/
 /.vscode
 .vs/*
 publish
+/netcorek8s/.vs/*
